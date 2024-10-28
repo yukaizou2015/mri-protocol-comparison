@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRI Protocol Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>MRI Protocol Comparison</h1>
+        
+        <select id="plantSelect" disabled>
+            <option value="QuickView">Quickly display a protocol for viewing</option>
+            <option value="QuickView">Compare two sequences within one protocol</option>
+            <option value="QuickView">Compare two sequences from two protocols</option>
+        </select>
+
+        <!-- Upload File -->
+        <label for="protocol1">Choose a protocol to upload:</label>
+        <input type="file" id="protocol1" name="protocol1" accept=".html" />
+        <!-- For two protocols -->
+        <!-- <label for="protocol2">Choose another protocol to upload:</label> -->
+        <!-- <input type="file" id="protocol2" name="protocol2" accept=".html" /> -->
+        <!-- Toggle Display -->
+        <div class="control-buttons">
+            <button onclick="toggleDisplay()" id="automatedControl" class="toggle-button">Display: OFF</button>
+            <button onclick="generateHighlightedElement()" id="highlightContent" class="toggle-button">Highlight Content: OFF</button>
+        </div>
+
+        <div id="contentContainer"></div>
+    </div>
+</body>
+</html>
