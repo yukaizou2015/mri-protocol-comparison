@@ -33,6 +33,15 @@ let htmlContent = ""; // Store the HTML file content
         }
     }
 
+// // Update the sequence list panel
+// function updateSequenceList() {
+//     const sequenceLists = document.querySelectorAll("#seqSelect");                
+    
+//     sequenceLists.forEach(sequenceList => {
+//         sequenceList.innerHTML = `<option value="QuickView">${sequenceList.innerHTML}</option>`;
+//     }
+// }
+
 // Show/hide the highlighted element
 function generateHighlightedElement() {
     isHighlightContent = !isHighlightContent;

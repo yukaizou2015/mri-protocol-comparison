@@ -28,8 +28,11 @@ select, button {
     border-radius: 5px;
     background-color: white;
 }
-select {
+#appSelect {
     cursor: not-allowed;
+}
+#seqSelect {
+    cursor: pointer;
 }
 button {
     background-color: #2e7d32;
@@ -39,6 +42,12 @@ button {
 }
 button:hover {
     background-color: #1b5e20;
+}
+
+.select-sequences {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 .control-buttons {

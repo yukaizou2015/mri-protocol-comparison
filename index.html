@@ -11,7 +11,7 @@
     <div class="container">
         <h1>MRI Protocol Comparison</h1>
         
-        <select id="plantSelect" disabled>
+        <select id="appSelect" disabled>
             <option value="QuickView">Quickly display a protocol for viewing</option>
             <option value="QuickView">Compare two sequences within one protocol</option>
             <option value="QuickView">Compare two sequences from two protocols</option>
@@ -23,6 +23,19 @@
         <!-- For two protocols -->
         <!-- <label for="protocol2">Choose another protocol to upload:</label> -->
         <!-- <input type="file" id="protocol2" name="protocol2" accept=".html" /> -->
+        
+        <!-- Select Sequences -->
+        <div class="select-sequences">
+            <div id="seqContainer">
+                <h3>Select Sequence 1:</h3>
+                <select id="seqSelect" size="10"></select>
+            </div>
+            <div id="seqContainer">
+                <h3>Select Sequence 2:</h3>
+                <select id="seqSelect" size="10"></select>
+            </div>
+        </div>
+        
         <!-- Toggle Display -->
         <div class="control-buttons">
             <button onclick="toggleDisplay()" id="automatedControl" class="toggle-button">Display: OFF</button>
